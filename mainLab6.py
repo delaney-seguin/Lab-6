@@ -6,9 +6,10 @@ def main():
         print('-------------')
         selection = int(input('1. Encode \n2. Decode \n3. Quit\n\nPlease Enter an option: '))
         if selection == 1:
-            encoder()
+            password = input('Please enter your password to encode:')
+            encodedPW = encode(password)
         elif selection == 2:
-            print('The encoded password is ',encodedPW,'and the orignal password is ',decode(encodedPW))
+            print('The encoded password is ',encodedPW,'and the orignal password is ',decode(encodedPW),'.')
         elif selection ==3:
             condition = False 
 if __name__ == "__main__":
